@@ -1,0 +1,12 @@
+import time
+
+text = "今天天气真好"
+print("请快速输入以下文字：", text)
+input("按回车开始...")
+start = time.time()
+user = input()
+end = time.time()
+if user == text:
+    print(f"用时：{end-start:.2f} 秒")
+else:
+    print("打错了！")
