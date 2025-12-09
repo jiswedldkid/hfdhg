@@ -1,0 +1,9 @@
+filename = "note.txt"
+
+while True:
+    text = input("写点东西（输入 q 保存退出）：")
+    if text == 'q':
+        break
+    with open(filename, 'a', encoding='utf-8') as f:
+        f.write(text + "\n")
+print("已保存到 note.txt")
