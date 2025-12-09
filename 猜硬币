@@ -1,0 +1,6 @@
+import random
+
+coin = random.choice(["正面", "反面"])
+guess = input("猜一猜：正面 or 反面？")
+print("结果：", coin)
+print("你赢了！" if guess == coin else "你输了～")
