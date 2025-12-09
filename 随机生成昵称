@@ -1,0 +1,5 @@
+import random
+
+adjs = ["酷炫", "萌萌", "闪亮", "神秘", "调皮"]
+nouns = ["小熊", "星星", "月亮", "云朵", "小龙"]
+print("你的随机昵称：", random.choice(adjs) + random.choice(nouns))
