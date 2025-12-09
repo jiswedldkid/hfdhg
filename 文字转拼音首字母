@@ -1,0 +1,6 @@
+text = input("输入中文：")
+pinyin_first = ""
+map_dict = {'我':'w', '你':'n', '好':'h', '世':'s', '界':'j', '爱':'a', '中':'z', '国':'g'}
+for char in text:
+    pinyin_first += map_dict.get(char, "?")
+print("拼音首字母：", pinyin_first.upper())
