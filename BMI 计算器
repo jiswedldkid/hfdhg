@@ -1,0 +1,4 @@
+weight = float(input("体重(kg)："))
+height = float(input("身高(m)："))
+bmi = weight / (height ** 2)
+print(f"BMI：{bmi:.2f} - {'偏瘦' if bmi < 18.5 else '正常' if bmi < 24 else '偏胖'}")
