@@ -1,0 +1,3 @@
+numbers = input("输入数字，用空格分开：").split()
+total = sum(int(x) for x in numbers)
+print("总和：", total)
