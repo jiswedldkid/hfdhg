@@ -1,0 +1,4 @@
+import random
+
+names = input("输入名字，用空格分开：").split()
+print("被抽中的是：", random.choice(names))
