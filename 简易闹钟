@@ -1,0 +1,4 @@
+import time
+seconds = int(input("设置闹钟秒数："))
+time.sleep(seconds)
+print("叮叮叮！时间到啦！⏰")
