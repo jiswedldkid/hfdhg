@@ -1,0 +1,34 @@
+import random
+
+choices = ["石头", "剪刀", "布"]
+
+print("欢迎玩石头剪刀布！")
+print("输入：石头 / 剪刀 / 布，输入 q 退出")
+
+while True:
+    # 电脑随机出招
+    computer = random.choice(choices)
+    
+    # 获取玩家输入
+    player = input("\n你的出招：").strip()
+    
+    if player == 'q':
+        print("游戏结束，下次再玩哦！")
+        break
+    
+    if player not in choices:
+        print("输入错误！只能输入：石头、剪刀、布")
+        continue
+    
+    print(f"你出：{player}")
+    print(f"电脑出：{computer}")
+    
+    # 判断胜负
+    if player == computer:
+        print("平局！")
+    elif (player == "石头" and computer == "剪刀") or \
+         (player == "剪刀" and computer == "布") or \
+         (player == "布" and computer == "石头"):
+        print("你赢了！🎉")
+    else:
+        print("你输了...😢 再接再厉！")
